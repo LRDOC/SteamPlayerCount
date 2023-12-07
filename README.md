@@ -1,4 +1,5 @@
-# Video Game Popularity Analysis Tool
+# Active Steam Users Dashboard
+This project pulls both current players in games from Steam using SteamAPIs as well as historical player count exported from SteamDB.info
 
 ## Requirements
 - Python (3.5+)
