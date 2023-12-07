@@ -8,7 +8,7 @@
 
 ## Installation
 - Ensure Python is installed on your system.
-- Install required Python packages using `pip install` followed by `pandas requests` or ` matplotlib`
+- Install required Python packages using `pip install` followed by `pandas requests` or `matplotlib`
 
 ## Usage Instructions
 
