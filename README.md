@@ -1,4 +1,4 @@
-# Active Steam Users Dashboard
+# Steam Player Count Dashboard
 This project pulls both current players in games from Steam using SteamAPIs as well as historical player count exported from SteamDB.info
 
 ## Requirements
