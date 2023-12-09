@@ -1,3 +1,13 @@
+'''
+Liam O'Connor
+Dec 13st, 2023
+CS5001 Final Project
+Steam Player Count Dashboard: data_processing.py
+
+This file contains the functions for processing data from the Steam Web API and CSV files. 
+Required files: data/rawData/games.csv
+'''
+
 import pandas as pd
 import os
 
@@ -37,13 +47,13 @@ def read_player_count_csv(game_id, csv_filename='games.csv'):
         raise FileNotFoundError(f"The file {csv_path} does not exist.") #This error should never be raised unless i messed up
     
     df = pd.read_csv(csv_path)
-    df['game_id'] = df['game_id'].astype(str) # Convert the 'game_id' column to string type
-    game_id = str(game_id) # Name of the input parameter is the same as the name of the column in the DataFrame
+    df['game_id'] = df['game_id'].astype(str) # Convert the 'game_id' column to string type because the input parameter is a string
+    game_id = str(game_id) # convert game_id to string | quality of life change
     
-    # Filter the DataFrame for the given game_id
-    df = df[df['game_id'] == game_id] # This is a boolean mask that filters the DataFrame for the given game_id
+    # Dataframes are immutable so we need to assign the filtered dataframe to a new variable
+    df = df[df['game_id'] == game_id] # Filter the dataframe to only include rows where the 'game_id' column matches the given game_id
     
-    if df.empty:
+    if df.empty: # If the dataframe is empty, return None
         return None
     
     df['Date'] = pd.to_datetime(df['Date'])  # Convert the 'Date' column to datetime format

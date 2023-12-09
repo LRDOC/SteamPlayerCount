@@ -1,3 +1,13 @@
+'''
+Liam O'Connor
+Dec 13st, 2023
+CS5001 Final Project
+Steam Player Count Dashboard: visualization.py
+
+This file contains the functions for visualizing data from the CSV files.
+Required files: data/rawData/games.csv
+'''
+
 import matplotlib.pyplot as plt
 
 def plot_player_count(data):

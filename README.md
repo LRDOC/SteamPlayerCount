@@ -27,3 +27,13 @@ Game IDs should be accurate and correspond to the correct game for current playe
 
 #### If you encounter a FileNotFoundError, ensure the CSV file is in the correct directory.
 For any issues with fetching data from the API, idk check your internet.
+
+
+## Credits
+https://steamdb.info/charts/ Exporting historical player count into CSV
+https://partner.steamgames.com/doc/webapi_overview#2 How to use Steam API
+https://vartree.blogspot.com/2012/11/harvesting-data-from-steam-community-api.html How to use Steam API (Better)
+https://steamwebapi.azurewebsites.net/ How to use Steam API (Better for seeing what I was looking at)
+https://steamcommunity.com/discussions/forum/10/1621726179562159409/ (Providing the game name with the game ID)
+https://www.youtube.com/watch?v=YEU75SfAfLE (From clueplc c for Constructing File Pathing)
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html (How to Use Pandas and Dataframes)
