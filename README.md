@@ -9,7 +9,7 @@ This project pulls both current players in games from Steam using SteamAPIs as w
 
 ## Installation
 - Ensure Python is installed on your system.
-- Install required Python packages using `pip install` followed by `pandas requests` or `matplotlib`
+- Install required Python packages using `pip install` followed by `pandas` `requests` or `matplotlib`
 
 ## Usage Instructions
 
