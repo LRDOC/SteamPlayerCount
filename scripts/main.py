@@ -48,7 +48,6 @@ def main():
             else:
                 print("Failed to fetch current player count or game ID is not valid.")
 
-
         else:
             print("Invalid choice. Please enter 'historical' or 'current'.")
 
