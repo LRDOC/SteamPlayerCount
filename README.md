@@ -10,10 +10,11 @@ This project pulls both current players in games from Steam using SteamAPIs as w
 ## Installation
 - Ensure Python is installed on your system.
 - Install required Python packages using `pip install` followed by `pandas` `requests` or `matplotlib`
+- If you would like to install this project without worrying about folder arrangement, https://github.com/LRDOC/SteamPlayerCount and press code. From there, press Download ZIP
 
 ## Usage Instructions
-
 1) Place the games.csv file in the data/rawData directory within the project.
+    - Create a folder that next the files, labeled "data", then a folder inside that called "rawData". After that place games.csv in there
 2) Run main.py from the scripts directory to start the tool.
 3) Choose 'historical' to see historical player data or 'current' for current player count.
     1) For historical data, select from the available games listed by the program.
@@ -23,10 +24,12 @@ This project pulls both current players in games from Steam using SteamAPIs as w
 ## Troubleshooting
 Ensure the CSV file is properly formatted as per the example provided in the data/rawData directory.
 
-Game IDs should be accurate and correspond to the correct game for current player count functionality.
+Game IDs should be accurate and correspond to the correct game for current player count functionality. If you want to look at more games for current count, go to https://steamdb.info/apps/ and search the game. Once found, input the AppID
+
+![Alt text](example.png)
 
 #### If you encounter a FileNotFoundError, ensure the CSV file is in the correct directory.
-For any issues with fetching data from the API, idk check your internet.
+For any issues with fetching data from the API, idk.
 
 
 ## Credits
